@@ -8,8 +8,10 @@ https://www.theodinproject.com/
 1. Install npm and node.js
 
 
-## :eyes: Notable command lines
+## :eyes: Lessons Learned 
 1. To open html on Chrome
 ```bash
 $ open ./src/index.html
 ```
+
+2. Normally we would only have the index.html at the root directory and all other HTML files in their own directory.
