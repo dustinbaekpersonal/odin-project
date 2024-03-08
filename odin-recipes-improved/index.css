@@ -1,0 +1,259 @@
+html {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(182, 159, 97), rgb(128, 89, 24))
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+    margin: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+#middle {
+    display: inline-table;
+    text-align: center;
+    position: relative;
+    transform: translateY(0.7vw);
+}
+
+#header {
+    position: relative;
+}
+
+#title {
+    position: relative;
+    font-family: "Chinese Calligraphy";
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-top: -3px;
+    margin-bottom: -250px;
+    font-size: 5vw;
+    text-align: center;
+    color: rgb(152, 87, 26);
+    bottom: 1.5vw;
+    animation: intro 2s forwards;
+}
+
+#underline {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    width: 65%;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
+}
+
+#korean_grill {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: -12em;
+    border: 7px white double;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2.3s;
+    box-shadow: 0 0 2vw black;
+}
+
+#korean_grill_img {
+    display: block;
+    width: 20vw;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#topLeft,
+#bottomLeft {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    pointer-events: none;
+    top: -0.5vw;
+    position: relative;
+    opacity: 0;
+    animation: leftSlide 2s forwards;
+    animation-delay: 2.8s;
+}
+
+#topLeftRecipe,
+#bottomLeftRecipe {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    display: inline;
+    object-fit: cover;
+    pointer-events: auto;
+    box-shadow: 0 0 2vw white;
+    margin-left: -3px;
+}
+
+#topLeftFrame,
+#bottomLeftFrame {
+    width: 25vw;
+    height: 25vw;
+    filter: hue-rotate(0deg) saturate(0);
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+#topLeft:hover,
+#bottomLeft:hover,
+#topRight:hover,
+#bottomRight:hover {
+    transform: scale(1.06);
+}
+
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#topRight,
+#bottomRight {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    pointer-events: none;
+    position: relative;
+    opacity: 0;
+    animation: rightSlide 2s forwards;
+    animation-delay: 2.8s;
+}
+
+#topRightRecipe,
+#bottomRightRecipe {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    display: inline;
+    object-fit: cover;
+    pointer-events: auto;
+    box-shadow: 0 0 2vw white;
+    margin-left: -3px;
+}
+
+
+#topRightFrame,
+#bottomRightFrame {
+    width: 25vw;
+    height: 25vw;
+    filter: hue-rotate(0deg) saturate(0);
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+/* #topLeftRecipe,
+#topLeftFrame {
+    margin-top: -50px;
+}
+
+
+#bottomLeftRecipe,
+#bottomLeftFrame {
+    margin-top: -750px;
+} */
+
+
+
+
+@keyframes intro {
+    100% {
+        bottom: 0
+    }
+
+    ;
+
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+
+    ;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+
+    ;
+}
+
+@keyframes leftSlide {
+    100% {
+        left: 0
+    }
+
+    ;
+
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+
+    ;
+}
+
+@keyframes rightSlide {
+    100% {
+        right: 0
+    }
+
+    ;
+
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+
+    ;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+
+    ;
+
+}
+
+@font-face {
+    font-family: "Chinese Calligraphy";
+    src: url(./images/KNBobohei-Bold.ttf);
+}
