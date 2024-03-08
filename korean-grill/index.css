@@ -1,6 +1,6 @@
 html {
-    min-height: 180vh;
-    background: linear-gradient(180deg, rgb(230, 107, 50), rgb(24, 119, 128))
+    min-height: 100vh;
+    background: linear-gradient(130deg, rgb(230, 107, 50), rgb(24, 119, 128))
 }
 
 body {
@@ -8,7 +8,7 @@ body {
     grid-template-columns: 30% 40% 30%;
     position: relative;
     margin: 0px;
-    height: 100vh;
+    height: 5vh;
     box-sizing: border-box;
 }
 
@@ -166,7 +166,6 @@ body {
     box-shadow: 0 0 4vw white;
     transition-duration: 1s;
 }
-
 
 #topRightHoverTitle,
 #bottomRightHoverTitle {
