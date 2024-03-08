@@ -1,6 +1,6 @@
 html {
-    min-height: 100vh;
-    background: linear-gradient(180deg, rgb(182, 159, 97), rgb(128, 89, 24))
+    min-height: 180vh;
+    background: linear-gradient(180deg, rgb(230, 107, 50), rgb(24, 119, 128))
 }
 
 body {
@@ -33,32 +33,22 @@ body {
     margin-bottom: -250px;
     font-size: 5vw;
     text-align: center;
-    color: rgb(152, 87, 26);
+    color: rgb(212, 198, 217);
     bottom: 1.5vw;
     animation: intro 2s forwards;
-}
-
-#underline {
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    margin-bottom: -20px;
-    width: 65%;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    animation-delay: 2s;
 }
 
 #korean_grill {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    margin-top: -12em;
+    margin-top: 250px;
     border: 7px white double;
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 2.3s;
-    box-shadow: 0 0 2vw black;
+    box-shadow: 0 0 2vw rgb(115, 74, 74);
+
 }
 
 #korean_grill_img {
@@ -85,28 +75,6 @@ body {
     opacity: 0;
     animation: leftSlide 2s forwards;
     animation-delay: 2.8s;
-}
-
-#topLeftRecipe,
-#bottomLeftRecipe {
-    position: absolute;
-    width: 18vw;
-    height: 18vw;
-    display: inline;
-    object-fit: cover;
-    pointer-events: auto;
-    box-shadow: 0 0 2vw white;
-    margin-left: -3px;
-}
-
-#topLeftFrame,
-#bottomLeftFrame {
-    width: 25vw;
-    height: 25vw;
-    filter: hue-rotate(0deg) saturate(0);
-    display: block;
-    position: relative;
-    top: 10px;
 }
 
 #topLeft:hover,
@@ -137,41 +105,32 @@ body {
     animation-delay: 2.8s;
 }
 
+#topLeftRecipe,
+#bottomLeftRecipe,
 #topRightRecipe,
 #bottomRightRecipe {
     position: absolute;
-    width: 18vw;
-    height: 18vw;
+    width: 19vw;
+    height: 19vw;
     display: inline;
     object-fit: cover;
     pointer-events: auto;
-    box-shadow: 0 0 2vw white;
-    margin-left: -3px;
+    box-shadow: 0 0 2vw rgb(178, 123, 123);
+    margin-left: -8px;
 }
 
-
+#topLeftFrame,
+#bottomLeftFrame,
 #topRightFrame,
 #bottomRightFrame {
     width: 25vw;
     height: 25vw;
-    filter: hue-rotate(0deg) saturate(0);
+    filter: hue-rotate(0deg) saturate(0) invert(90%);
     display: block;
     position: relative;
     top: 10px;
+
 }
-
-/* #topLeftRecipe,
-#topLeftFrame {
-    margin-top: -50px;
-}
-
-
-#bottomLeftRecipe,
-#bottomLeftFrame {
-    margin-top: -750px;
-} */
-
-
 
 
 @keyframes intro {
@@ -240,18 +199,6 @@ body {
     ;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-
-    ;
-
-}
 
 @font-face {
     font-family: "Chinese Calligraphy";
