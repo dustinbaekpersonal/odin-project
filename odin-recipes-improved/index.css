@@ -133,6 +133,52 @@ body {
 }
 
 
+/* #topLeftOverlay,
+#bottomLeftOverlay {
+    position: relative;
+    width: 18vw;
+    height: 18vw;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Chinese Calligraphy";
+    opacity: 0;
+    transition: 0.75s;
+    pointer-events: auto;
+    text-decoration: none;
+} */
+
+#topLeftHoverTitle,
+#bottomLeftHoverTitle {
+    position: absolute;
+    display: block;
+    font-size: 1.6vw;
+    text-decoration: underline;
+    margin-top: 0.4vh;
+    font-family: "Chinese Calligraphy";
+    color: white;
+}
+
+#topRight:hover>#topRightRecipe {
+    box-shadow: 0 0 4vw white;
+    transition-duration: 1s;
+}
+
+
+#topRightHoverTitle,
+#bottomRightHoverTitle {
+    position: absolute;
+    display: block;
+    font-size: 1.6vw;
+    text-decoration: underline;
+    margin-top: 0.4vh;
+    font-family: "Chinese Calligraphy";
+    color: white;
+}
+
 @keyframes intro {
     100% {
         bottom: 0
