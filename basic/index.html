@@ -10,32 +10,34 @@
 </head>
 
 <body>
-    <h1>Welcome to first html file</h1>
-    <p>This is a paragraph.</p>
-    <h2>Here we will show javascript</h2>
-    <!-- javascript reference -->
-    <script src="script.js"></script>
-    <!-- strong is for bold statement -->
-    <p>End of <strong>javascript</strong> code.</p>
-    <!--This is how to comment out in html-->
-    <em>One line space</em>
+    <div>
+        <h1 id="asdf">Welcome to first html file</h1>
+        <p>This is a paragraph.</p>
+    </div>
+    <div>
+        <h2>Here we will show javascript and <span class="highlight">inline element</span> using span.</h2>
+        <!-- javascript reference -->
+        <script src="script.js"></script>
+        <!-- strong is for bold statement -->
+        <p>End of <strong>javascript</strong> code.</p>
+        <!--This is how to comment out in html-->
+        <em>One line space</em>
+    </div>
+
 </body>
 
+
 <body>
-    <h1>Homepage</h1>
+    <h1 class="alter-text">Homepage</h1>
     <!-- To create a link, you need an anchor element -->
     <!-- target=_blank opens in new tab -->
     <a href="https://www.theodinproject.com/about" target="_blank">click me</a>
     <!-- relative link to about.html -->
     <a href="./pages/about.html">link to About page</a>
     <!-- put image using link -->
-    <img src="./images/dog.jpg" alt="This text will show up if image not available" height="300" width="300">
-</body>
-
-<body>
-    <!-- unordered list -->
+    <img id="dog_image" src="./images/dog.jpg" alt="This text will show up if image not available">
     <ul>
-        <li>Item 1</li>
+        <li class="something">Item 1</li>
         <li>Item 2</li>
     </ul>
     <!-- ordered list -->
@@ -43,6 +45,28 @@
         <li>Item 1</li>
         <li>Item 2</li>
     </ol>
+
+    <div class="whole-container">
+        <div class="flex-container">
+            <div class="one"></div>
+            <div class="two">
+            </div>
+            <div class="three"></div>
+        </div>
+        <div class="second-flex">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
 </body>
+
 
 </html>
