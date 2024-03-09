@@ -1,9 +1,19 @@
+/* -- Overall -- */
 html {
-    min-height: 100vh;
+    min-height: 130vh;
     background: linear-gradient(130deg, rgb(230, 107, 50), rgb(24, 119, 128))
 }
 
-body {
+
+/*dev purpose */
+* {
+    border: border-box;
+    font-family: "Chinese Calligraphy";
+    /* outline: 2px solid red; */
+}
+
+/* -- First Section -- */
+.first-section {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     position: relative;
@@ -11,7 +21,6 @@ body {
     height: 5vh;
     box-sizing: border-box;
 }
-
 
 #middle {
     display: inline-table;
@@ -54,6 +63,20 @@ body {
 #korean_grill_img {
     display: block;
     width: 20vw;
+}
+
+#find-us {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2.3s;
+}
+
+#find-us-groups {
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #left {
@@ -116,7 +139,7 @@ body {
     object-fit: cover;
     pointer-events: auto;
     box-shadow: 0 0 2vw rgb(178, 123, 123);
-    margin-left: -8px;
+    /* margin-left: -8px; */
 }
 
 #topLeftFrame,
@@ -129,37 +152,65 @@ body {
     display: block;
     position: relative;
     top: 10px;
-
+    margin-left: 8px;
 }
 
 
-/* #topLeftOverlay,
-#bottomLeftOverlay {
-    position: relative;
-    width: 18vw;
-    height: 18vw;
+#topLeftOverlay,
+#bottomLeftOverlay,
+#topRightOverlay,
+#bottomRightOverlay {
+    position: absolute;
+    width: 19vw;
+    height: 19vw;
     background: rgba(0, 0, 0, 0);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-family: "Chinese Calligraphy";
     opacity: 0;
     transition: 0.75s;
     pointer-events: auto;
     text-decoration: none;
-} */
+}
+
+#topLeftOverlay>*,
+#bottomLeftOverlay>*,
+#topRightOverlay>*,
+#bottomRightOverlay>* {
+    transform: translate(0.5vw);
+    transition: transform 0.5s;
+}
+
+#topLeftOverlay:hover,
+#bottomLeftOverlay:hover,
+#topRightOverlay:hover,
+#bottomRightOverlay:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+#topLeftOverlay:hover>*,
+#bottomLeftOverlay:hover>*,
+#topRightOverlay>*,
+#bottomRightOverlay>* {
+    transform: translateY(-1vw);
+}
+
 
 #topLeftHoverTitle,
-#bottomLeftHoverTitle {
+#bottomLeftHoverTitle,
+#topRightHoverTitle,
+#bottomRightHoverTitle {
     position: absolute;
     display: block;
     font-size: 1.6vw;
     text-decoration: underline;
-    margin-top: 0.4vh;
     font-family: "Chinese Calligraphy";
     color: white;
+    text-decoration: none;
 }
 
 #topRight:hover>#topRightRecipe {
@@ -167,17 +218,79 @@ body {
     transition-duration: 1s;
 }
 
-#topRightHoverTitle,
-#bottomRightHoverTitle {
-    position: absolute;
-    display: block;
-    font-size: 1.6vw;
-    text-decoration: underline;
-    margin-top: 0.4vh;
-    font-family: "Chinese Calligraphy";
-    color: white;
+
+/* -- Second Section -- */
+.second-section {
+    margin-top: 850px;
+    padding-bottom: 50px;
+    /* background-color: #6c96d1; */
+
 }
 
+.information-header-text {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3.5s;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3.5s;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+}
+
+.card-group {
+    max-width: 160px;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.information-header-text {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.aboutImage,
+.reservationImage,
+.onlineDeliveryImage {
+    width: 12em;
+    height: 14em;
+    object-fit: cover;
+    border: 0.3em solid rgb(255, 255, 255);
+    border-radius: 1.5em;
+    box-shadow: 0 10px 30px black;
+    transition: 0.3s;
+    margin: -0.5em -1em -1em -1em;
+}
+
+.aboutImage:hover,
+.reservationImage:hover,
+.onlineDeliveryImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(2, 173, 164);
+}
+
+.linkI {
+    margin: 1em 2em 0 2em;
+    border-radius: 1.5em;
+}
+
+
+
+/* -- Animation -- */
 @keyframes intro {
     100% {
         bottom: 0
