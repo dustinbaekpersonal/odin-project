@@ -1,6 +1,6 @@
 /* -- Overall -- */
 html {
-    min-height: 130vh;
+    min-height: 150vh;
     background: linear-gradient(130deg, rgb(230, 107, 50), rgb(24, 119, 128))
 }
 
@@ -51,13 +51,13 @@ html {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    margin-top: 250px;
+    margin-top: 270px;
+    margin-right: 300px;
     border: 7px white double;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: leftSlide 2s forwards;
     animation-delay: 2.3s;
     box-shadow: 0 0 2vw rgb(115, 74, 74);
-
 }
 
 #korean_grill_img {
@@ -72,6 +72,7 @@ html {
 }
 
 #find-us-groups {
+    margin-top: 350px;
     font-size: 30px;
     font-weight: 900;
     display: flex;
@@ -79,7 +80,8 @@ html {
     gap: 10px;
 }
 
-#left {
+#left,
+#right {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -100,18 +102,12 @@ html {
     animation-delay: 2.8s;
 }
 
+#korean_grill:hover,
 #topLeft:hover,
 #bottomLeft:hover,
 #topRight:hover,
 #bottomRight:hover {
     transform: scale(1.06);
-}
-
-
-#right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 #topRight,
@@ -128,6 +124,7 @@ html {
     animation-delay: 2.8s;
 }
 
+#korean_grill_img,
 #topLeftRecipe,
 #bottomLeftRecipe,
 #topRightRecipe,
@@ -139,7 +136,6 @@ html {
     object-fit: cover;
     pointer-events: auto;
     box-shadow: 0 0 2vw rgb(178, 123, 123);
-    /* margin-left: -8px; */
 }
 
 #topLeftFrame,
@@ -155,7 +151,7 @@ html {
     margin-left: 8px;
 }
 
-
+#korean_grill_location,
 #topLeftOverlay,
 #bottomLeftOverlay,
 #topRightOverlay,
@@ -168,7 +164,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
     font-family: "Chinese Calligraphy";
     opacity: 0;
     transition: 0.75s;
@@ -176,6 +171,7 @@ html {
     text-decoration: none;
 }
 
+#korean_grill_location>*,
 #topLeftOverlay>*,
 #bottomLeftOverlay>*,
 #topRightOverlay>*,
@@ -184,6 +180,7 @@ html {
     transition: transform 0.5s;
 }
 
+#korean_grill_location:hover,
 #topLeftOverlay:hover,
 #bottomLeftOverlay:hover,
 #topRightOverlay:hover,
@@ -192,6 +189,7 @@ html {
     background: rgba(0, 0, 0, 0.65);
 }
 
+#korean_grill_location:hover>*,
 #topLeftOverlay:hover>*,
 #bottomLeftOverlay:hover>*,
 #topRightOverlay>*,
@@ -199,7 +197,7 @@ html {
     transform: translateY(-1vw);
 }
 
-
+#korean_grill_location_title,
 #topLeftHoverTitle,
 #bottomLeftHoverTitle,
 #topRightHoverTitle,
@@ -207,27 +205,20 @@ html {
     position: absolute;
     display: block;
     font-size: 1.6vw;
-    text-decoration: underline;
     font-family: "Chinese Calligraphy";
     color: white;
     text-decoration: none;
 }
 
-#topRight:hover>#topRightRecipe {
-    box-shadow: 0 0 4vw white;
-    transition-duration: 1s;
-}
-
 
 /* -- Second Section -- */
 .second-section {
-    margin-top: 850px;
+    margin-top: 900px;
     padding-bottom: 50px;
-    /* background-color: #6c96d1; */
-
 }
 
 .information-header-text {
+    margin-bottom: 50px;
     text-align: center;
     opacity: 0;
     animation: fadeIn 1s forwards;
